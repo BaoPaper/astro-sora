@@ -1,9 +1,9 @@
 ---
-title: 'Embedded Content'
+title: '嵌入内容'
 pubDate: '2025-06-06'
 ---
 
-Use these directives to embed media:
+使用这些指令来嵌入媒体：
 
 ```
 ::link{url="https://xxxxx.xxx"}
@@ -24,20 +24,20 @@ Use these directives to embed media:
 ```
 🟡
 
-When embedded content is still loading,
-the table of contents positioning may be inaccurate.
+当嵌入内容仍在加载时，
+目录定位可能不准确。
 ```
 
-## Link Card
+## 链接卡片
 
 ::link{url="https://pitchfork.com/reviews/albums/ichiko-aoba-luminescent-creatures/"}
 
 ```
 🟡
 
-If you don’t need Link Card,
-you can set `linkCard` to `false` in `src/config.ts`,
-then you don't need to set adapter before building.
+如果您不需要链接卡片，
+可以在 `src/config.ts` 中将 `linkCard` 设置为 `false`，
+然后您在构建前就不需要设置适配器。
 ```
 
 ## Spotify
@@ -56,13 +56,13 @@ then you don't need to set adapter before building.
 
 ## GitHub
 
-::github{repo="the3ash/astro-chiri"}
+::github{repo="BaoPaper/astro-sora"}
 
 ## X Post
 
 ::x{url="https://x.com/DAVID_LYNCH/status/1174367510893752321"}
 
-## NeoDB (CN Only)
+## NeoDB (仅限中国)
 
 ::neodb{url="https://neodb.social/album/5nD3R8gmnVlsoOBdyO8PA3"}
 

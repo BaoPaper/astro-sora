@@ -1,82 +1,82 @@
 ---
-title: 'Theme Guide'
+title: '主题指南'
 pubDate: '2025-07-10'
 ---
 
-Chiri is a minimal blog theme built with [Astro](https://astro.build), offering customization options while preserving its clean aesthetic.
+Sora 是一个基于 [Astro](https://astro.build) 构建的极简博客主题，在保持简洁美感的同时提供了丰富的自定义选项。
 
 ---
 
-## Basic Commands
+## 基本命令
 
-- `pnpm new <title>` - Create a new post (use `_title` for drafts)
-- `pnpm update-theme` - Update the theme to the latest version
+- `pnpm new <title>` - 创建新文章 (使用 `_title` 创建草稿)
+- `pnpm update-theme` - 将主题更新到最新版本
 
-## Main Files & Directories
+## 主要文件和目录
 
-- `src/content/about/about.md` - Edit the about section of the index page. Leave it empty if you don't want any content.
-- `src/content/posts/` - All blog posts are stored here
-- `src/config.ts` - Configure main site info and settings
+- `src/content/about/about.md` - 编辑首页的关于部分。如果不想显示任何内容，可将其留空。
+- `src/content/posts/` - 所有博客文章都存储在这里
+- `src/config.ts` - 配置主要站点信息和设置
 
 ```ts
-// Site Info
+// 站点信息
 site: {
-  website: 'https://astro-chiri.netlify.app/', // Site domain
-  title: 'CHIRI', // Site title
-  author: '3ASH', // Author name
-  description: 'Minimal blog built by Astro', // Site description
-  language: 'en-US' // Default language
+  website: 'https://baopaper.cn/', // 站点域名
+  title: 'SORA', // 站点标题
+  author: 'BaoPaper', // 作者名称
+  description: '由 Astro 构建的极简博客', // 站点描述
+  language: 'zh-CN' // 默认语言
 },
 ```
 
 ```ts
-// General Settings
+// 常规设置
 general: {
-  contentWidth: '35rem', // Content area width
-  centeredLayout: true, // Use centered layout (false for left-aligned)
-  themeToggle: false, // Show theme toggle button (uses system theme by default)
-  postListDottedDivider: false, // Show dotted divider in post list
-  footer: true, // Show footer
-  fadeAnimation: true // Enable fade animations
+  contentWidth: '35rem', // 内容区域宽度
+  centeredLayout: true, // 使用居中布局 (false 为左对齐)
+  themeToggle: false, // 显示主题切换按钮 (默认使用系统主题)
+  postListDottedDivider: false, // 在文章列表中显示点状分隔符
+  footer: true, // 显示页脚
+  fadeAnimation: true // 启用淡入淡出动画
 },
 ```
 
 ```ts
-// Date Settings
+// 日期设置
 date: {
-  dateFormat: 'YYYY-MM-DD', // Date format: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  dateSeparator: '.', // Date separator: . - / (except for MONTH DAY YYYY and DAY MONTH YYYY)
-  dateOnRight: true // Date position in post list (true for right, false for left)
+  dateFormat: 'YYYY-MM-DD', // 日期格式: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  dateSeparator: '.', // 日期分隔符: . - / (MONTH DAY YYYY 和 DAY MONTH YYYY 除外)
+  dateOnRight: true // 文章列表中的日期位置 (true 为右侧, false 为左侧)
 },
 ```
 
 ```ts
-// Post Settings
+// 文章设置
 post: {
-  readingTime: false, // Show reading time in posts
-  toc: true, // Show table of contents (when there is enough page width)
-  imageViewer: true, // Enable image viewer
-  copyCode: true, // Enable copy button in code blocks
-  linkCard: true // Enable link card
+  readingTime: false, // 在文章中显示阅读时间
+  toc: true, // 显示目录 (当有足够的页面宽度时)
+  imageViewer: true, // 启用图片查看器
+  copyCode: true, // 在代码块中启用复制按钮
+  linkCard: true // 启用链接卡片
 }
 ```
 
-## Post Frontmatter
+## 文章 Frontmatter
 
-Only `title` and `pubDate` are required fields
+只有 `title` 和 `pubDate` 是必需字段
 
 ```ts
 ---
-title: 'Post Title'
+title: '文章标题'
 pubDate: '2025-07-10'
 ---
 ```
 
-## Syntax Highlighting
+## 语法高亮
 
-You can configure the theme via `shikiConfig` in `astro.config.ts`.
+您可以通过 `astro.config.ts` 中的 `shikiConfig` 配置主题。
 
-More details: [Syntax Highlighting | Astro Docs](https://docs.astro.build/en/guides/syntax-highlighting/)
+更多详情: [语法高亮 | Astro 文档](https://docs.astro.build/en/guides/syntax-highlighting/)
 
 ```ts
 import { defineConfig } from 'astro/config'
@@ -94,16 +94,16 @@ export default defineConfig({
 
 ---
 
-## Preview of Some Features
+## 部分功能预览
 
-![Theme Toggle](./_assets/theme-toggle.png)
+![主题切换](./_assets/theme-toggle.png)
 
-![Dotted Divider](./_assets/dotted-divider.png)
+![点状分隔符](./_assets/dotted-divider.png)
 
-![Date on Left Side](./_assets/date-on-left.png)
+![日期在左侧](./_assets/date-on-left.png)
 
-![Table of Contents](./_assets/toc.png)
+![目录](./_assets/toc.png)
 
-![Reading Time](./_assets/reading-time.png)
+![阅读时间](./_assets/reading-time.png)
 
-![Copy Code](./_assets/copy-code.png)
+![复制代码](./_assets/copy-code.png)
