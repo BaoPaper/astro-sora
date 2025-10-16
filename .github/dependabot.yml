@@ -15,7 +15,7 @@ updates:
     allow:
       - dependency-type: 'all'
     assignees:
-      - 'the3ash'
+      - 'BaoPaper'
     commit-message:
       # Use 'deps' for production dependencies, 'dev' for development dependencies
       prefix: 'deps'
@@ -42,7 +42,7 @@ updates:
       timezone: 'Asia/Shanghai'
     open-pull-requests-limit: 10
     assignees:
-      - 'the3ash'
+      - 'BaoPaper'
     commit-message:
       prefix: 'github-actions'
       include: 'scope'
