@@ -5,7 +5,10 @@
 
 Sora 是一个基于 [Astro](https://astro.build) 构建的极简博客主题，在保持简洁美感的同时提供了丰富的自定义选项。
 
-查看 [演示](https://astro-chiri.netlify.app/) 了解更多详情。
+查看 [演示](https://astro-sora.netlify.app/) 了解更多详情。
+
+> [!NOTE]
+> 本项目在[astro-chiri](https://github.com/the3ash/astro-chiri)的基础上进行二次开发
 
 ## 功能特性
 
