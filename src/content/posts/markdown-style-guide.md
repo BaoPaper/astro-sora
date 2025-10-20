@@ -1,6 +1,7 @@
 ---
 title: 'Markdown 样式指南'
 pubDate: '2025-06-28'
+tags: ['markdown', 'guide', 'syntax']
 ---
 
 此主题未定义更多级别的标题。如果需要，您可以在 `src/styles/post.css` 中定义。

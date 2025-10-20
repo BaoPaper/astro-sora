@@ -1,6 +1,7 @@
 ---
 title: 'KaTeX 示例'
 pubDate: '2025-05-19'
+tags: ['math', 'katex', 'latex']
 ---
 
 此主题包含内置的 KaTeX 支持，可在您的内容中渲染数学表达式。

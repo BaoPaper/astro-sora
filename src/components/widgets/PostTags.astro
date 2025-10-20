@@ -1,0 +1,43 @@
+---
+interface Props {
+  tags: string[]
+}
+
+const { tags } = Astro.props
+---
+
+{
+  tags && tags.length > 0 && (
+    <span class="post-tags">
+      {tags.map((tag, index) => (
+        <>
+          <a href={`/tags/${tag}`}>{tag}</a>
+          {index < tags.length - 1 && ', '}
+        </>
+      ))}
+    </span>
+  )
+}
+
+<style>
+  .post-tags {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+
+  .post-tags a {
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    border-radius: 0;
+    font-size: inherit;
+    transition: none;
+  }
+
+  .post-tags a:hover {
+    background-color: transparent;
+    transform: none;
+    text-decoration: underline;
+  }
+</style>

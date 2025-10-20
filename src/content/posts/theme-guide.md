@@ -1,6 +1,7 @@
 ---
 title: '主题指南'
 pubDate: '2025-07-10'
+tags: ['theme', 'guide', 'astro']
 ---
 
 Sora 是一个基于 [Astro](https://astro.build) 构建的极简博客主题，在保持简洁美感的同时提供了丰富的自定义选项。

@@ -1,6 +1,7 @@
 ---
 title: '嵌入内容'
 pubDate: '2025-06-06'
+tags: ['media', 'embeds', 'video']
 ---
 
 使用这些指令来嵌入媒体：
